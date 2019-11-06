@@ -1,16 +1,10 @@
-collection = [1,2,3,4]
-
-def my_each(collection)# put argument(s) here
-  i=0
-   while i < collection.length
-   yield(collection[i])
-   i+=1
-   end
-   collection
-  end
-
-  my_each(collection) {|x| puts x}
-
-
-  # code here
+def my_each(array)# put argument(s) here
+# code here 
+ i = 0
+ while i < array.size
+   block.given? #optional
+   yied(array[i])
+   i += 1
+ end
+array
 end
